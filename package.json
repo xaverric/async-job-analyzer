@@ -1,0 +1,32 @@
+{
+  "name": "async-job-analyzer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "public/cli.js",
+  "bin": {
+    "async-job-analyzer": "public/cli.js"
+  },
+  "scripts": {
+    "startDev": "tsc --watch",
+    "build": "tsc --build",
+    "clean": "tsc --build --clean",
+    "installGlobally": "npm pack & npm install --global async-job-analyzer-1.0.0.tgz",
+    "async-job-analyzer-unpacked": "node ./public/cli.js"
+  },
+  "author": "Daniel Jilek",
+  "license": "ISC",
+  "dependencies": {
+    "@types/command-line-args": "^5.2.0",
+    "@types/command-line-usage": "^5.0.2",
+    "@types/node": "^18.0.3",
+    "axios": "^0.27.2",
+    "cli-table3": "^0.6.2",
+    "command-line-usage": "^6.1.3",
+    "typescript": "^4.7.4",
+    "winston": "^3.8.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xaverric/async-job-analyzer.git"
+  }
+}
