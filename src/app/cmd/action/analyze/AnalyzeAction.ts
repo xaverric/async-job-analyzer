@@ -94,6 +94,8 @@ class AnalyzeAction implements Action {
             analyzedJobs.push({
                 id: jobData.id,
                 queue: jobData.queueCode,
+                startTime: jobData.notBeforeTime,
+                call: jobData.call.uri,
                 cts: jobData.sys.cts,
                 mts: jobData.sys.mts,
                 rev: jobData.sys.rev,

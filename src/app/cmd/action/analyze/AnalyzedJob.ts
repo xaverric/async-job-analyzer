@@ -1,6 +1,8 @@
 interface AnalyzedJob {
     id: string,
     queue: string,
+    startTime: unknown,
+    call: string,
     cts: unknown,
     mts: unknown,
     rev: unknown,
